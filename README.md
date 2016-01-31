@@ -6,6 +6,10 @@ Sorted by TypeScript
 ### Use
 
 ````
+<script src="/js/sort.js"></script>
+````
+
+````
 var sort = new Sort();
 var result = sort.marge(number[]);
 ````
