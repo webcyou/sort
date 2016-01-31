@@ -84,10 +84,13 @@ module Sort {
      * @prams a
      * @returns number[]
     **/
-    public bucket(a: number[]): number[] {
+    public bucket(a: number[], bucketLength?: number): number[] {
       var bucket: number[] = [],
           max: number = this._bucket_length,
           count: number = 0;
+      if (bucketLength) {
+        this._bucket_length = bucketLength;
+      }
       if (a.length > max) {
         max = a.length + 1;
       }

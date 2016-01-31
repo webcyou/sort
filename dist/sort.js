@@ -82,8 +82,11 @@ var Sort;
             }
             return a;
         };
-        SortModel.prototype.bucket = function (a) {
+        SortModel.prototype.bucket = function (a, bucketLength) {
             var bucket = [], max = this._bucket_length, count = 0;
+            if (bucketLength) {
+                this._bucket_length = bucketLength;
+            }
             if (a.length > max) {
                 max = a.length + 1;
             }

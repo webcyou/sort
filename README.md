@@ -19,8 +19,16 @@ var result = new Sort(number[]);
 ### Option
 
 ````
-new Sort(number[], bucketLength);
+var sort = new Sort([], bucketLength);
+var result = sort.bucket(number[]);
 ````
+or
+
+````
+var sort = new Sort();
+var result = sort.bucket(number[], bucketLength);
+````
+
 
 | OptionName           | DefaultValue    |
 | -------------------- |-----------------|
